@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/web/hero.css">
+    <link rel="stylesheet" href="style/web/about.css">
+    <link rel="stylesheet" href="style/mobile/mobile.css">
+    <link rel="shortcut icon" href="style/imgs/fiveicon.svg" type="image/x-icon">
+    <title>Gui Kruger</title>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="hero__top">
+            <p><b>Guilherme</b> Kruger Andrade </p>
+            <hr class="hr__black">
+        </div>
+
+        <div class="hero__infos">
+            <div class="hero__left">
+                <h1>Opa, sou o Gui</h1>
+                <p>Acredito que combinar habilidades técnicas com<br> criatividade é o caminho para o sucesso em
+                    qualquer<br>projeto...</p>
+                <button onclick="window.location.href='https://www.linkedin.com/in/krugergui/';" class="hero__button">Linkedin</button>
+            </div>
+            <div class="hero__right">
+                <img class="hero__img" src="style/imgs/foto1.svg">
+            </div>
+        </div>
+        <hr class="hr__black">
+    </section>
+
+    <section class="about">
+        <div clas="about__infos">
+            <fieldset class="about__card">
+                <div class="about__left">
+                    <img class="about__img" src="style/imgs/foto2.svg">
+                </div>
+
+                <div class="about__right">
+                    <div class="about__infos">
+                        <p class="about__subtitle">
+                            <b>< sobre_mim ></b>
+                        </p>
+                        <h1 class="about__title">Guilherme Kruger Andrade</h1>
+                        <p class="about__subtitle"><b>Frontend Developer & UI/UX Designer</b></p>
+                    </div>
+
+                    <p class="about__text">Como UI/UX designer e frontend, crio soluções funcionais e atraentes, focadas em usabilidade e
+                        desempenho. Exploro novas tecnologias para desenvolver interfaces responsivas e intuitivas,
+                        unindo estética, eficiência e resultados que encantam.</p>
+                    <hr class="hr__white">
+                    <button onclick="window.location.href='https://github.com/KrugerGuii';" class="about__button">Github</button>
+                    <button onclick="window.location.href='https://www.behance.net/gallery/184220049/Portifolio-Gui-Kruger;';" class="about__button">Behance</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <script>
+        window.onload = function() {
+            const heroLeft = document.querySelector('.hero__left');
+            const heroButton = document.querySelector('.hero__button');
+            const heroImg = document.querySelector('.hero__img');
+            const aboutCard = document.querySelector('.about__card');
+            const aboutTitle = document.querySelector('.about__title');
+            const aboutText = document.querySelector('.about__text');
+            const aboutButton = document.querySelector('.about__button');
+            
+            heroLeft.classList.add('fadeIn');
+            heroButton.classList.add('fadeIn');
+            heroImg.classList.add('fadeIn');
+            aboutCard.classList.add('slideInLeft');
+            aboutTitle.classList.add('slideInLeft');
+            aboutText.classList.add('slideInLeft');
+            aboutButton.classList.add('fadeIn');
+        };
+    </script>
+
+</body>
+
+</html>
